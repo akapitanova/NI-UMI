@@ -1,4 +1,4 @@
-# Navygace vysavače v prostoru
+# Navigace vysavače v prostoru
 
 ## Implementace
 
