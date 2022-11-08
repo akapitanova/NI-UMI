@@ -12,7 +12,7 @@ odkaz na celé zadání:
 https://courses.fit.cvut.cz/NI-UMI/files/MI-UMI_seminar-01_problem-solving.pdf
 
 Ukázka prostoru:
-
+<img src="/img/prostor.png" alt="MarineGEO circle logo" style="height: 500px; width:500px;"/>
 
 ## Definujte stavový prostor
 
@@ -22,10 +22,11 @@ Jednotlivé stavy tvoří vrcholy mnohoúhelníků, resp. počáteční pozice r
 
 
 Ukázka stavového prostoru:
+<img src="/img/stav_pros.png" alt="MarineGEO circle logo" style="height: 500px; width:500px;"/>
 
 ## Hledání nejkratší cesty
 Na vytvořeném diskrétním stavovém prostoru jsem nejkratší cestu hledala pomocí algoritmu A*. Jako heuristiku jsem jsem vybrala eukleidovskou vzdálenost.
 
 Ukázka řešení:
-
+<img src="/img/cesta.png" alt="MarineGEO circle logo" style="height: 500px; width:500px;"/>
 
