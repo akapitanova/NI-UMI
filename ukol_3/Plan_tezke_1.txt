@@ -1,0 +1,4 @@
+(go monkey place_c place_a)
+(push monkey box_b place_a place_b)
+(climb_up monkey box_b place_b)
+(grasp monkey place_b banana box_b)
