@@ -1,0 +1,7 @@
+(move_car_horizontal car_y place_13 place_23 place_33)
+(move_car_horizontal car_y place_23 place_33 place_43)
+(move_car_vertical car_r place_31 place_32 place_30)
+(move_car_horizontal car_b place_52 place_42 place_32)
+(move_car_vertical car_g place_53 place_54 place_52)
+(move_car_vertical car_g place_52 place_53 place_51)
+(move_car_horizontal car_y place_33 place_43 place_53)
