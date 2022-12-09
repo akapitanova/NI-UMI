@@ -23,10 +23,11 @@ d) V prostředí se bude vyskytovat více krabic dvou typů, a sice lehké a tě
 opice nedokáže pohnout s lehkými ano. Modifikujte doménu, aby tyto vlastnosti
 operátory zohledňovaly.
 
-Ukázka prostoru:
 <img src="img/opice.png" alt="MarineGEO circle logo" style="height: 100px; width:250px;"/>
 
 ## Základní verze
+V navržené doméně sestavte plán, kterým se opice zmocní banánů.
+
 
 Pro řešení základní verze úlohy jsem doménu definovala následujícím způsobem:
 
@@ -136,6 +137,65 @@ Problém/Stav jsem definovala následovně:
 (grasp monkey place_b banana box)
 
 ```
+
+## Upravte cíl tak, aby opice zmátla vědce
+Upravte cíl tak, aby opice zmátla vědce, kteří ji pozorují, tj. zmocnila se banánů, ale
+zároveň uvedla prostředí do původního stavu (krabice zpět na své místo).
+
+Definice domény zůstala stejná a upravila jsem pouze cíl.
+### Cíl
+
+
+```
+(:goal (and (has monkey banana)
+                (at box place_a)
+                (at monkey place_c)
+        )
+    )
+
+```
+
+### Plán
+
+```
+(go monkey place_c place_a)
+(push monkey box place_a place_b)
+(climb_up monkey box place_b)
+(grasp monkey place_b banana box)
+(climb_down monkey box place_b)
+(push monkey box place_b place_a)
+(go monkey place_a place_c)
+
+```
+
+## V prostředí se bude vyskytovat více krabic dvou typů, a sice lehké a těžké
+V prostředí se bude vyskytovat více krabic dvou typů, a sice lehké a těžké. S těžkými
+opice nedokáže pohnout s lehkými ano. Modifikujte doménu, aby tyto vlastnosti
+operátory zohledňovaly.
+
+
+Pro ukázku jsem vytvořila dvě vzorové situace. V prvním případě se na pozici C, na které je také opice nachází těžká krabice a na pozici A krabice lehká, opice tak musí dojít k lehké krabici na pozici A. V druhém případě je těžká krabice na pozici A a lehká na pozici C společně s opicí. 
+
+
+Vytvořila jsem nový predikát is_heavy, a upravila akci push -- přidala jsem podmínku, že u dané krabice nesmí platit is_heavy, tedy musí se jednat o lehkou krabici.
+
+### Plán 1. verze
+
+```
+(go monkey place_c place_a)
+(push monkey box_b place_a place_b)
+(climb_up monkey box_b place_b)
+(grasp monkey place_b banana box_b)
+```
+
+### Pl8n 2. verze
+
+```
+(push monkey box_b place_c place_b)
+(climb_up monkey box_b place_b)
+(grasp monkey place_b banana box_b)
+```
+
 
 
 
