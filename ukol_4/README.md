@@ -4,7 +4,7 @@
 
 Úkol jsem řešila pomocí PDDL řešiče, definovaná doména, problém i plán jsou v přiložených souborech.
 
-Přikládám ještě jupyter notebook pro genorování grafiky k vytvořenému plánu.
+Přikládám ještě jupyter notebook pro generování animace k vytvořenému plánu.
 
 ## Zadání
 Rush-Hour – chceme auta přesouvat horizontálně a vertikálně tak, aby se žluté auto
