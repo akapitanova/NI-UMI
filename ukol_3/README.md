@@ -1,9 +1,5 @@
 # Opice a banány
 
-## Implementace
-
-Úkol jsem řešila pomocí PDDL řešiče v přiložených souborech jsou k patřičným podúlohám dostupné soubory příslušných definovaných domén, problémů a vygenerovaných plánů.
-
 
 ## Zadání
 Navrhněte plánovací doménu pro úlohu s opicí a vysoko visícími banány. Opice se může
@@ -24,6 +20,10 @@ opice nedokáže pohnout s lehkými ano. Modifikujte doménu, aby tyto vlastnost
 operátory zohledňovaly.
 
 <img src="img/opice.png" alt="MarineGEO circle logo" style="height: 100px; width:250px;"/>
+
+## Implementace
+
+Úkol jsem řešila pomocí PDDL řešiče v přiložených souborech jsou k patřičným podúlohám dostupné soubory příslušných definovaných domén, problémů a vygenerovaných plánů.
 
 ## Základní verze
 V navržené doméně sestavte plán, kterým se opice zmocní banánů.
