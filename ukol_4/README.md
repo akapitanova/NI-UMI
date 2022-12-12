@@ -147,7 +147,7 @@ Vygenerovaný plán:
 (move_car_horizontal car_y place_33 place_43 place_53)
 
 ```
-Animace vypočítaného plánu:
+Animace vygenerovaného plánu:
 
 ![SegmentLocal](test.gif "segment")
 
