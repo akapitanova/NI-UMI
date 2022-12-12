@@ -1,4 +1,4 @@
-# Navigace vysavače v prostoru
+# Opice a banány
 
 ## Implementace
 

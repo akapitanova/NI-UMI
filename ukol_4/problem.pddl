@@ -41,11 +41,11 @@
         (is_place place_50) (is_place place_51) (is_place place_52) (is_place place_53) (is_place place_54) (is_place place_55)
         
 
+        (at car_y place_03)
         (at car_y place_13)
-        (at car_y place_23)
         
+        (is_occupied place_03)
         (is_occupied place_13)
-        (is_occupied place_23)
         
         (at car_r place_31)
         (at car_r place_32)
