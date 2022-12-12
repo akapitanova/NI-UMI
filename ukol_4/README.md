@@ -1,25 +1,26 @@
 # Hra Rush-Hour
 
-## Implementace
-
-Úkol jsem řešila pomocí PDDL řešiče, definovaná doména, problém i plán jsou v přiložených souborech.
-
-Přikládám ještě jupyter notebook pro generování animace k vytvořenému plánu.
-
 ## Zadání
 Rush-Hour – chceme auta přesouvat horizontálně a vertikálně tak, aby se žluté auto
 dostalo pryč z parkoviště.
 
 <img src="img/rush-hour.png" alt="MarineGEO circle logo" style="height: 100px; width:100px;"/>
 
-Parkoviště má rozměry 6x6 a může obsahovat auta nebo kamiony. Auta zabírají dv polička, kamiony 3.
+Parkoviště má rozměry 6x6 a může obsahovat auta nebo kamiony. Auta zabírají dvě polička, kamiony 3.
 
 
-Počáteční pozici aut jsem nechala stejnou jako je na obrázku až na žluté auto, které jsem umístila do stejného řádku jako je výjezd z parkoviště. Jelikož původní pravidla hry počítají pouze s horizontálním a vertikálním pohybem aut na parkovišti ve směru předku, resp. zadku auta a tak by se žluté auto z pozice na obrázku ven z parkoviště nikdy nedostalo.
+Počáteční pozici aut jsem nechala stejnou jako je na obrázku až na žluté auto, které jsem umístila do stejného řádku jako je výjezd z parkoviště. Jelikož původní pravidla hry počítají pouze s horizontálním a vertikálním pohybem aut na parkovišti ve směru předku, resp. zadku auta, a tak by se žluté auto z pozice na obrázku ven z parkoviště nikdy nedostalo.
 
 Počáteční pozice:
 
 <img src="img/poc_poz.png" alt="MarineGEO circle logo" style="height: 100px; width:100px;"/>
+
+
+## Implementace
+
+Úkol jsem řešila pomocí PDDL řešiče. Definovaná doména, problém i plán jsou v přiložených souborech.
+
+Přikládám ještě jupyter notebook pro generování animace k vytvořenému plánu.
 
 ## Řešení
 
@@ -119,7 +120,20 @@ Kompletní definice problému je přiloženém souboru, zde pro její obsáhlost
 ### Objekty
 
 ```
-(:objects monkey banana box place_a place_b place_c)
+(:objects
+        car_y car_r car_g car_b 
+        
+        
+        truck_g truck_b
+        
+        
+        place_00 place_01 place_02 place_03 place_04 place_05 
+        place_10 place_11 place_12 place_13 place_14 place_15 
+        place_20 place_21 place_22 place_23 place_24 place_25 
+        place_30 place_31 place_32 place_33 place_34 place_35 
+        place_40 place_41 place_42 place_43 place_44 place_45 
+        place_50 place_51 place_52 place_53 place_54 place_55 
+    )
 ```
 
 ### Cíl
