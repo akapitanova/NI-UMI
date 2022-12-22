@@ -1,0 +1,8 @@
+(go shakey room3 corridor)
+(go shakey corridor room1)
+(take_box shakey box1 room1)
+(go shakey room1 corridor)
+(go shakey corridor room4)
+(place_box shakey box1 room4)
+(climb_up shakey box1 room4)
+(switch_on shakey room4 switch4 box1)
