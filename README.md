@@ -4,7 +4,7 @@ This repository contains multiple homework assignments for the NI-UMI course, ea
 
 ## 📌 Homework Overview  
 
-### 1️⃣ [Robot Navigation in a 2D Space](NI-UMI/ukol_1/)  
+### 1️⃣ [Robot Navigation in a 2D Space](./ukol_1/)  
 - Implemented in **Python** using `matplotlib` and `shapely`.  
 - The robot must navigate a **continuous 2D space** filled with polygonal obstacles from a start position to a target.  
 - The shortest path is found using **A* search** with **Euclidean distance heuristic**.  
@@ -12,7 +12,7 @@ This repository contains multiple homework assignments for the NI-UMI course, ea
 
 ---
 
-### 2️⃣ [Vacuum Cleaner Navigation](NI-UMI/ukol_2/)  
+### 2️⃣ [Vacuum Cleaner Navigation](./ukol_2/)  
 - Implemented in **Python** using `matplotlib`.  
 - The robot vacuum must visit and clean all dirty locations while minimizing travel distance.  
 - Modeled as a **Traveling Salesman Problem (TSP)** and solved using **Steepest Ascent Hill Climbing**.  
@@ -20,7 +20,7 @@ This repository contains multiple homework assignments for the NI-UMI course, ea
 
 ---
 
-### 3️⃣ [Monkey and Bananas Problem](NI-UMI/ukol_3/)  
+### 3️⃣ [Monkey and Bananas Problem](./ukol_3/)  
 - Implemented in **PDDL (Planning Domain Definition Language)**.  
 - The monkey must move around a **linear environment**, push a box under hanging bananas, climb up, and grab them.  
 - Additional challenges:  
@@ -29,14 +29,14 @@ This repository contains multiple homework assignments for the NI-UMI course, ea
 
 ---
 
-### 4️⃣ [Rush Hour Puzzle Solver](NI-UMI/ukol_4/)  
+### 4️⃣ [Rush Hour Puzzle Solver](./ukol_4/)  
 - Implemented in **PDDL**, with a **Jupyter notebook for animation**.  
 - The goal is to move cars and trucks in a **6x6 parking lot** to free a path for the yellow car to exit.  
 - The problem is formulated using constraints on **horizontal and vertical movements** of vehicles.  
 
 ---
 
-### 5️⃣ [Robot Shakey Planning](NI-UMI/ukol_5/)  
+### 5️⃣ [Robot Shakey Planning](./ukol_5/)  
 - Implemented in **PDDL**.  
 - Shakey the robot must move between rooms, manipulate boxes, and interact with light switches.  
 - To turn on a light, Shakey must:  
@@ -46,7 +46,4 @@ This repository contains multiple homework assignments for the NI-UMI course, ea
 - The plan ensures **Shakey successfully lights up Room 4**.  
 
 ---
-
-## 📂 Repository Structure  
-NI-UMI/ │── ukol_1/ # Robot navigation in 2D space │── ukol_2/ # Vacuum cleaner path planning │── ukol_3/ # Monkey and Bananas problem │── ukol_4/ # Rush Hour puzzle solver │── ukol_5/ # Robot Shakey planning
 
